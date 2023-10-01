@@ -1,0 +1,105 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&display=swap');
+
+*{
+	font-family: 'Fira Sans', sans-serif;
+	margin:0; padding:0;
+	box-sizing: border-box;
+	outline:none;
+	border:none;
+	text-decoration: none;
+	text-transform: none;
+	transition: .2s linear;
+}
+
+
+body{
+	background:#B0806E;
+}
+
+html{
+	font-size: 90%;
+	overflow-x: hidden;
+}
+.header{
+	position: sticky;
+	top:0; left:0; right:0;
+	background-color: aliceblue;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+
+.header .flex{
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin:0 auto;
+}
+.header .flex .logo{
+   font-size: 2rem;
+   color: burlywood;
+}
+
+.header .flex .logo span{
+   color: black;
+}
+
+.header .flex .navigationbar a{
+   margin:0 1rem;
+   font-size: 1.5rem;
+   color: #361500;
+}
+
+.header .flex .navigationbar a:hover{
+   color: #F7CCAC;
+}
+
+.header .flex .account-box{
+   position: absolute;
+   top:120%; right:2rem;
+   width: 30rem;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   border-radius: .5rem;
+   padding:2rem;
+   text-align: center;
+   border:.1rem solid #333;
+   background-color: #fff;
+   display: none;
+   animation:fadeIn .2s linear;
+}
+
+.header .flex .account-box.active{
+   display: inline-block;
+}
+
+.header .flex .account-box p{
+   font-size: 2rem;
+   color:#666;
+   margin-bottom: 1.5rem;
+}
+
+.header .flex .account-box p span{
+   color:#8e44ad;
+}
+
+.header .flex .account-box .delete-btn{
+   margin-top: 0;
+}
+
+.header .flex .account-box div{
+   margin-top: 1.5rem;
+   font-size: 2rem;
+   color:#666;
+}
+
+.header .flex .account-box div a{
+   color:#f39c12;
+}
+
+.header .flex .account-box div a:hover{
+   text-decoration: underline;
+}
+ section{
+   padding:3rem 2rem;
+}
